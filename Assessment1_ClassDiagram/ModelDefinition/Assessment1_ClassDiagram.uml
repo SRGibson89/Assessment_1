@@ -1,0 +1,770 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="7e3f20c2-8008-420c-8a2b-a87a4a2d3ba3"
+  name="Assessment1_ClassDiagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="4de2a704-f455-4dbc-82af-3682cf057604"
+        name="Person"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="261c20ce-821d-4833-a119-a5157d587808"
+            name="Firstname"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d4258e81-2f6e-4fac-b8a5-d793e286f651"
+                LastKnownName="string"
+                LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60730d31-ef73-4b25-ae9c-39d70e47df36"
+            name="Surname"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d4258e81-2f6e-4fac-b8a5-d793e286f651"
+                LastKnownName="string"
+                LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="368e93f0-a50d-4146-93be-398f139d534d"
+            name="getFirstname"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0c7291de-1fb6-4b42-ab66-8e3e4236f8be"
+            name="getSurname"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="39494f49-83f6-4ca6-ad1d-fe510fba2f13"
+            name="setFirstname"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fe80c234-b5d6-4aab-900e-589c82e44935"
+            name="setSurname"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d4258e81-2f6e-4fac-b8a5-d793e286f651"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="68b45184-d079-41c7-af3f-4301b7c55858"
+        name="Attendee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d8de2147-827a-408a-9fcc-ce2739eb2c94"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4de2a704-f455-4dbc-82af-3682cf057604"
+              LastKnownName="Person"
+              LastKnownLocation="Assessment1_ClassDiagram.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="b1af12a6-d115-49fe-8164-f70d32f3a238"
+            isDerived="false"
+            sourceEndRoleName="Attendee"
+            targetEndRoleName="Instution"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="0f25acfd-7f6c-4449-b5f6-2c220728d516"
+              LastKnownName="Instution"
+              LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e6b6e0bf-8106-4d98-b687-23253511b7a8"
+                  name="Attendee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aec16336-66b8-4c4c-bd12-3cace19ed488"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0fbc237e-09ce-4e07-a755-40cf4853eb9c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="966e8171-b060-4fac-86db-dfa84f6cab33"
+                  name="Instution"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8c69d1df-464c-4462-8cad-372a9abb4c36"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c65c7b8a-70fc-4d13-8da4-af3167f3dba2"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="aeda336e-61c8-47ff-b819-144b4acd709c"
+            name="attendee_ref"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8769f33d-7a10-431a-9e1f-ecd25ac42569"
+            name="paper_title"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c3df8026-9a6b-483d-b628-3780db916069"
+            name="reg_type"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ea4fd891-3200-48fc-a725-2f400772a3f8"
+            name="paid"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="79bbc47d-33fb-42ae-a863-27206f473c63"
+            name="presenting"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9212ed6d-f5f6-460d-a5cb-af60411b9d2c"
+            name="confernce_name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="339d80a6-3d94-415b-b1b2-24f3f3fdd80c"
+            name="discount"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="814bd685-a2d7-4603-89bd-b3330be22f19"
+            name="Attendee_ref"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="87853c05-302a-4d98-bb09-66233069599d"
+            name="Conference_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="63231311-7d7e-4642-8df4-45c5c1e48acf"
+            name="Paid"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="aa2dd56a-abb3-4fe4-86c3-fc83747c663c"
+            name="Presenting"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f06951df-64b7-4ff0-beff-787f5463a302"
+            name="Cost"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="ff92e1e7-8402-462d-b802-5d28eb1bf23f"
+            name="student_cost"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="6afae6ea-3167-44a0-8df6-9535c6bc5b3a"
+            name="full_cost"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9963d47e-3687-43eb-9855-d9c48d15f895"
+            name="Reg_type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="20bb7deb-daf9-4787-8706-9ebf9858b8c9"
+            name="getAttendee_ref"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="76669044-5f8f-4b5e-9c8a-40de5afdc7bd"
+            name="setAttendee_ref"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="94939c73-836f-44d6-8a98-2202b4e70f7a"
+            name="getPaper_title"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fb0421d0-a682-493e-bfbb-e539c1870ba2"
+            name="setPaper_title"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b2cf4e4e-15c9-499a-a06a-cee7ded82883"
+            name="getReg_type"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="87f19319-91e4-48c6-b46f-fb02f13291f3"
+            name="setReg_type"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9db3b9f8-9b14-4a47-ad41-18a37344658b"
+            name="getPaid"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3cd82e76-d0ff-4e2a-8274-87302fa6079b"
+            name="getPresenting"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fc58d1f8-2964-4e96-92d3-3e5389f492d8"
+            name="setPresenting"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a380a51d-7fae-4a01-95f0-45ce9ee6b15f"
+            name="Institution_address"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="78761686-6d45-4d28-9ea8-3577e2c97415"
+            name="Institution_name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="056d6c20-06ba-493b-af18-23db04cba14e"
+            name="getConference_name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0bf3ec84-8879-4464-9016-033c0141a5d8"
+            name="setConference_name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b9b147ab-e3dd-420c-870a-59c9d64872bc"
+            name="Paid_check"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e92e2ebc-d068-45f5-aa6c-66761ce0b145"
+            name="Presenting_check"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="816f731f-f802-4930-9e32-82802b762a63"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="b068a62d-41ac-49b6-be61-ef469941ebfb"
+        name="boolean" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0f25acfd-7f6c-4449-b5f6-2c220728d516"
+        name="Instution"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="dd618a41-66fe-4627-bcb8-e78053b135ec"
+            name="Instuition_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d4258e81-2f6e-4fac-b8a5-d793e286f651"
+                LastKnownName="string"
+                LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="82d66c02-83b8-442d-9a9a-285015e5f209"
+            name="Instution_address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d4258e81-2f6e-4fac-b8a5-d793e286f651"
+                LastKnownName="string"
+                LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="890c8982-f6d8-4a30-9572-3f6a74b02f94"
+            name="getInstution_name"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a2d80fe9-00d6-422b-b186-226a9c20d147"
+            name="getInstution_address"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dec9bfb3-b254-474f-bed1-953570be3f94"
+            name="setInstution_name"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cd247418-bc30-433e-8d94-9afd3a3efb37"
+            name="setInstution_address"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="910e6ebf-255b-493b-9ef9-38c8e1469aba"
+        name="Bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f2cd09bd-bf8f-4b63-8230-516401c6aedc"
+        name="GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2eda5c24-e41f-45eb-99a6-d503af7b643d"
+        name="GUI: ConfrenceWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="93c397df-c87e-40da-af06-8e4c740175ab"
+            isDerived="false"
+            sourceEndRoleName="GUI: ConfrenceWindow"
+            targetEndRoleName="Attendee"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="68b45184-d079-41c7-af3f-4301b7c55858"
+              LastKnownName="Attendee"
+              LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fc79aa3f-8297-4f02-92b3-cc2408ca0312"
+                  name="GUI: ConfrenceWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0f6fa3e1-9f4c-4248-bd3d-6d565c57f2c2"
+                  name="Attendee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2cac6a75-6ed7-4d30-bc5e-ace20940b857"
+        name="GUI: Certificate"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3651c8a2-3b02-4bc7-ab7f-efca5436d4aa"
+            isDerived="false"
+            sourceEndRoleName="GUI: Certificate"
+            targetEndRoleName="GUI: ConfrenceWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2eda5c24-e41f-45eb-99a6-d503af7b643d"
+              LastKnownName="GUI: ConfrenceWindow"
+              LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4e26995e-45f5-458d-a396-87cd326fbc95"
+                  name="GUI: Certificate"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2610018e-eaf1-44ac-bf39-4ef14388d9b3"
+                  name="GUI: ConfrenceWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9feea5a2-1882-45dd-980e-e499f5f8ce31"
+        name="GUI: Invoice"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3ee1310a-4eb1-4e93-97bf-43fa33523827"
+            isDerived="false"
+            sourceEndRoleName="GUI: Invoice"
+            targetEndRoleName="GUI: ConfrenceWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="2eda5c24-e41f-45eb-99a6-d503af7b643d"
+              LastKnownName="GUI: ConfrenceWindow"
+              LastKnownLocation="Assessment1_ClassDiagram.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1bad7e3-fbd7-4ea9-a169-5989f0e0ddc1"
+                  name="GUI: Invoice"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50dc9d9b-5f41-40de-980c-23c664ac8b02"
+                  name="GUI: ConfrenceWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
