@@ -1,0 +1,18 @@
+﻿<Window x:Class="Assessment_1.Invoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Invoice" Height="332.044" Width="470.711">
+    <Grid>
+        <Button x:Name="btnReturn" Content="Return" HorizontalAlignment="Left" Height="34" Margin="177,238,0,0" VerticalAlignment="Top" Width="88" Click="btnReturn_Click"/>
+        <Label x:Name="lbltitle" Content="Invoice" Height="34" Margin="197,10,198,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblName" Content="Name:" HorizontalAlignment="Left" Height="32" Margin="17,59,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblInstitution" Content="Institution Name:" HorizontalAlignment="Left" Height="32" Margin="17,96,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblConfrence" Content="Conference Name:" HorizontalAlignment="Left" Height="32" Margin="17,133,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblCost" Content="Cost:" HorizontalAlignment="Left" Height="32" Margin="17,170,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="lblDisplayName" Content="" HorizontalAlignment="Left" Height="32" Margin="132,59,0,0" VerticalAlignment="Top" Width="285"/>
+        <Label x:Name="lblDisplayInstitution" Content="" HorizontalAlignment="Left" Height="32" Margin="132,96,0,0" VerticalAlignment="Top" Width="285"/>
+        <Label x:Name="lblDisplayConfenernce" Content="" HorizontalAlignment="Left" Height="32" Margin="132,133,0,0" VerticalAlignment="Top" Width="285"/>
+        <Label x:Name="lblDisplayCost" Content="" HorizontalAlignment="Left" Height="32" Margin="132,170,0,0" VerticalAlignment="Top" Width="285"/>
+
+    </Grid>
+</Window>

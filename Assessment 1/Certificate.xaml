@@ -1,0 +1,9 @@
+﻿<Window x:Class="Assessment_1.Certificate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Certificate" Height="215.9" Width="515.9">
+    <Grid>
+        <Label x:Name="lblCertificate" Content="" Height="64" Margin="25,51,25,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnOK" Content="OK" Height="37" Margin="190,139,190,0" VerticalAlignment="Top" Click="btnOK_Click"/>
+    </Grid>
+</Window>
